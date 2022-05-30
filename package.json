@@ -1,6 +1,6 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "silo",
+  "version": "1.0.3",
   "devDependencies": {
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
@@ -18,5 +18,11 @@
   "dependencies": {
     "ipfs-http-client": "^56.0.3",
     "sweetalert2": "^11.4.17"
-  }
+  },
+  "description": "store files on ipfs",
+  "main": "src/main.js",
+  "repository": "https://github.com/atordvairn/silo.git",
+  "author": "atordvairn <atordvairn@gmail.com>",
+  "license": "MIT",
+  "private": true
 }

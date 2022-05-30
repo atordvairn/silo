@@ -36,12 +36,12 @@
 <br />
 {#if uploading == false}
   <div class="uploadText">
-    <div style="margin: auto;">
+    <div style="margin: auto;padding:20px;">
       your file: <a href={addr} target="_blank" rel="noopener noreferrer">
         {filename}
       </a>
       <br />
-      <div style="margin: 20px;">
+      <div style="margin: auto;padding: 15px;">
         <div
           class="labelForFile"
           on:click={() => {
@@ -73,10 +73,11 @@
   </div>
 {/if}
 <article>
-  IPFS allows users to host and receive content in a manner similar to
-  BitTorrent. As opposed to a centrally located server, IPFS is built around a
-  decentralized system of user-operators who hold a portion of the overall data,
-  creating a resilient system of file storage and sharing.
+  <h2>What Is Ipfs?</h2>
+  IPFS allows users to host and receive content in a manner similar to BitTorrent.
+  As opposed to a centrally located server, IPFS is built around a decentralized
+  system of user-operators who hold a portion of the overall data, creating a resilient
+  system of file storage and sharing.
   <p>
     Any user in the network can serve a file by its content address, and other
     peers in the network can find and request that content from any node who has
@@ -89,24 +90,26 @@
   by using gateways which are accessible with HTTP.Users may choose not to install
   an IPFS client on their device and instead use a public gateway. A list of these
   gateways is maintained on the IPFS GitHub page.
-
-  <div class="labelForFile" style="width: 214px;margin-top: 10px;">
-    <a
-      class="a"
-      href={"https://en.wikipedia.org/wiki/InterPlanetary_File_System"}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+  <br />
+  <br />
+  <a
+    class="a"
+    href={"https://en.wikipedia.org/wiki/InterPlanetary_File_System"}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="labelForFile" style="margin-top: 10px;">
       read more on wikipedia
-    </a>
-  </div>
+    </span>
+  </a>
 </article>
+<div style="padding: 1rem;">
+  <hr />
+</div>
 
 <style global>
-  body,
-  html {
-    margin: 0px !important;
-    padding: 0px !important;
+  hr {
+    border: 1px solid rgb(161, 131, 94);
   }
 
   .a {
@@ -160,5 +163,11 @@
     height: 4.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  @media (min-width: 1000px) {
+    .navbar {
+      width: 98vw;
+    }
   }
 </style>

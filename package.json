@@ -16,6 +16,7 @@
     "dev": "webpack serve --content-base public"
   },
   "dependencies": {
-    "ipfs-http-client": "^56.0.3"
+    "ipfs-http-client": "^56.0.3",
+    "sweetalert2": "^11.4.17"
   }
 }

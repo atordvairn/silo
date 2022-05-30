@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-* {
-  background: bisque !important;
+body, html, .navbar, .uploadText {
+  background: bisque;
   font-family: 'Raleway', sans-serif;
 }

@@ -1,8 +1,6 @@
-html,
-body, {
-  min-height: 200vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-*{
-    background: bisque !important;
+* {
+  background: bisque !important;
+  font-family: 'Raleway', sans-serif;
 }
